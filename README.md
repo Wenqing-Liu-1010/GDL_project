@@ -1,6 +1,8 @@
 
 For setting up the environment:
+
 conda create --name new_env --file base_conda_packages.txt
+
 pip install -r base_pip_requirements.txt
 
 
