@@ -311,12 +311,15 @@ def set_dataset_info(dataset):
         cfg.share.dim_in = cfg.share.dim_in + cfg.share.dim_out
 
     # count number of dataset splits
+    #####################这里修改过
     cfg.share.num_splits = 1
-    for key in dataset.data.keys:
+    # for key in dataset.data.keys:
+    for key in dataset.data.keys():
         if 'val' in key:
             cfg.share.num_splits += 1
             break
-    for key in dataset.data.keys:
+    # for key in dataset.data.keys:
+    for key in dataset.data.keys():
         if 'test' in key:
             cfg.share.num_splits += 1
             break

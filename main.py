@@ -114,6 +114,7 @@ def run_loop_settings():
 
 
 if __name__ == '__main__':
+    print("CUDA available:", torch.cuda.is_available())
     logging.info(f"[*] Main started now: {datetime.datetime.now()}")
     # Make args compatible with "=" param separation needed for W&B sweeps
     processed_args = []

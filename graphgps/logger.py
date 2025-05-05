@@ -135,6 +135,7 @@ class CustomLogger(Logger):
         true = true.to(torch.device(cfg.device))
         pred_score = pred_score.to(torch.device(cfg.device))
         acc = MetricWrapper(metric='accuracy',
+                            task='multilabel', ##新加的
                             target_nan_mask='ignore-mean-label',
                             threshold=0.,
                             cast_to_int=True)
@@ -168,6 +169,8 @@ class CustomLogger(Logger):
             assert np.isclose(ogb['auc'], results['auc'])
 
         return results
+
+
 
     def subtoken_prediction(self):
         from ogb.graphproppred import Evaluator
@@ -237,7 +240,8 @@ class CustomLogger(Logger):
             'spearmanr': reformat(eval_spearmanr(true.numpy(),
                                                  pred.numpy())['spearmanr']),
             'mse': reformat(mean_squared_error(true, pred)),
-            'rmse': reformat(mean_squared_error(true, pred, squared=False)),
+            # 'rmse': reformat(mean_squared_error(true, pred, squared=False)),
+            'rmse': reformat(np.sqrt(mean_squared_error(true, pred))),
         }
 
     def update_stats(self, pred, true, loss, lr, time_used, params,
