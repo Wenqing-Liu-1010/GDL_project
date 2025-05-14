@@ -1,0 +1,9 @@
+pip install torch==2.5.1+cu118 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+pip install torch-geometric -f https://data.pyg.org/whl/torch-2.5.1+cu118.html
+pip install yacs pytorch-lightning==1.9.5
+pip install ogb
+pip install pyg-lib torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric \
+  -f https://data.pyg.org/whl/torch-2.5.1+cu118.html
+
+pip install torchmetrics==0.10.3

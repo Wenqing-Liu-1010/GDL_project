@@ -1,6 +1,9 @@
 import os.path as osp
 
 import networkx as nx
+# from networkx.generators.trees import random_tree
+
+# nx.random_tree = random_tree
 import numpy as np
 import torch
 from torch_geometric.data import Data, InMemoryDataset
@@ -62,7 +65,8 @@ class SourceDistanceDataset(InMemoryDataset):
 
     def _generate_nx_graph(self, split):
         n_nodes = self.random.choice(range(*getattr(self, f'{split}_n_nodes')))
-        G = nx.random_tree(n_nodes, self.random)
+        # G = nx.random_tree(n_nodes, self.random)
+        G = nx.generators.trees.random_tree(n_nodes, seed=self.random)
         dist_sort = nx.single_source_shortest_path_length(G, 0)
         edges_dir = list(map(
             lambda x: x if dist_sort[x[0]] < dist_sort[x[1]] else x[::-1],

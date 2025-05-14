@@ -1,0 +1,321 @@
+
+Running s2gnn with seed 11
+Time: 1483 seconds
+---------------------------------------
+Running s2gnn with seed 12
+Time: 1476 seconds
+---------------------------------------
+Running s2gnn with seed 13
+Time: 1494 seconds
+---------------------------------------
+Running s2gnn with seed 14
+Time: 1499 seconds
+---------------------------------------
+Running s2gnn with seed 15
+Time: 1507 seconds
+---------------------------------------
+Running s2gnn with seed 16
+Time: 1517 seconds
+---------------------------------------
+Running s2gnn with seed 17
+Time: 1518 seconds
+---------------------------------------
+Running s2gnn with seed 18
+Time: 1539 seconds
+---------------------------------------
+Running s2gnn with seed 19
+Time: 1574 seconds
+---------------------------------------
+Running s2gnn with seed 20
+Time: 1528 seconds
+---------------------------------------
+Running gcnconv with seed 11
+Time: 589 seconds
+---------------------------------------
+Running gcnconv with seed 12
+Time: 590 seconds
+---------------------------------------
+Running gcnconv with seed 13
+Time: 635 seconds
+---------------------------------------
+Running gcnconv with seed 14
+Time: 579 seconds
+---------------------------------------
+Running gcnconv with seed 15
+Time: 572 seconds
+---------------------------------------
+Running gcnconv with seed 16
+Time: 575 seconds
+---------------------------------------
+Running gcnconv with seed 17
+Time: 573 seconds
+---------------------------------------
+Running gcnconv with seed 18
+Time: 570 seconds
+---------------------------------------
+Running gcnconv with seed 19
+Time: 571 seconds
+---------------------------------------
+Running gcnconv with seed 20
+Time: 571 seconds
+---------------------------------------
+Running distance regression(dag-dirgcn-s2gnn-undir ) with seed 11
+Time: 6752 seconds
+---------------------------------------
+Running distance regression(dag-dirgcn-s2gnn-undir ) with seed 12
+Time: 6755 seconds
+---------------------------------------
+Running distance regression(dag-dirgcn-s2gnn-undir ) with seed 13
+Time: 9735 seconds
+---------------------------------------
+
+Running distance regression(dag-dirgcn-s2gnn-dir ) with seed 11
+Time: 17298 seconds
+
+Over-squashing(spec) with seed 11
+Time: 107 seconds
+---------------------------------------
+Over-squashing(spec) with seed 12
+Time: 107 seconds
+---------------------------------------
+Over-squashing(spec) with seed 13
+Time: 107 seconds
+---------------------------------------
+Over-squashing(spec) with seed 14
+Time: 134 seconds
+---------------------------------------
+Over-squashing(spec) with seed 15
+Time: 230 seconds
+---------------------------------------
+Over-squashing(spec) with seed 16
+Time: 108 seconds
+---------------------------------------
+Over-squashing(spec) with seed 17
+Time: 162 seconds
+---------------------------------------
+Over-squashing(spec) with seed 18
+Time: 107 seconds
+---------------------------------------
+Over-squashing(spec) with seed 19
+Time: 165 seconds
+---------------------------------------
+Over-squashing(spec) with seed 20
+Time: 103 seconds
+
+---------------------------------------
+Over-squashing(gated) with seed 11
+Time: 77 seconds
+---------------------------------------
+Over-squashing(gated) with seed 12
+Time: 201 seconds
+---------------------------------------
+Over-squashing(gated) with seed 13
+Time: 194 seconds
+---------------------------------------
+Over-squashing(gated) with seed 14
+Time: 166 seconds
+---------------------------------------
+Over-squashing(gated) with seed 15
+Time: 165 seconds
+---------------------------------------
+Over-squashing(gated) with seed 16
+Time: 221 seconds
+---------------------------------------
+Over-squashing(gated) with seed 17
+Time: 211 seconds
+---------------------------------------
+Over-squashing(gated) with seed 18
+Time: 224 seconds
+---------------------------------------
+Over-squashing(gated) with seed 19
+Time: 208 seconds
+---------------------------------------
+Over-squashing(gated) with seed 20
+Time: 177 seconds
+---------------------------------------
+
+
+arxiv-year(s2gnn) with seed 11
+Time: 3525 seconds
+---------------------------------------
+arxiv-year(s2gnn) with seed 12
+Time: 3338 seconds
+---------------------------------------
+arxiv-year(s2gnn) with seed 13
+Time: 3069 seconds
+---------------------------------------
+arxiv-year(s2gnn) with seed 14
+Time: 2828 seconds
+---------------------------------------
+arxiv-year(s2gnn-pe) with seed 11
+Time: 3574 seconds
+---------------------------------------
+arxiv-year(s2gnn-pe) with seed 12
+Time: 5449 seconds
+---------------------------------------
+arxiv-year(s2gnn-pe) with seed 13
+Time: 4728 seconds
+---------------------------------------
+arxiv-year(lingnn) with seed 11
+Time: 2087 seconds
+---------------------------------------
+arxiv-year(lingnn) with seed 12
+Time: 2246 seconds
+---------------------------------------
+arxiv-year(lingnn) with seed 13
+Time: 2258 seconds
+---------------------------------------
+
+associative-recall(s2gnn) with seed 11
+Time: 3284 seconds
+---------------------------------------
+associative-recall(s2gnn) with seed 12
+Time: 3270 seconds
+---------------------------------------
+associative-recall(s2gnn) with seed 13
+Time: 3254 seconds
+---------------------------------------
+associative-recall(spec) with seed 11
+Time: 19481 seconds
+
+associative-recall(lingnn) with seed 11
+Time: 5827 seconds
+---------------------------------------
+associative-recall(lingnn) with seed 12
+Time: 7309 seconds
+---------------------------------------
+associative-recall(lingnn) with seed 13
+Time: 6154 seconds
+---------------------------------------
+cluster-gcn(100k) with seed 11
+Time: 886 seconds
+---------------------------------------
+cluster-gcn(100k) with seed 12
+Time: 763 seconds
+---------------------------------------
+cluster-gcn(100k) with seed 13
+Time: 883 seconds
+---------------------------------------
+cluster-gcn(s2gnn-100k) with seed 11
+Time: 1324 seconds
+---------------------------------------
+cluster-gcn(s2gnn-100k) with seed 12
+Time: 1045 seconds
+---------------------------------------
+cluster-gcn(s2gnn-100k) with seed 13
+Time: 1251 seconds
+---------------------------------------
+cluster-gcn(s2gnn-pe-100k) with seed 11
+Time: 1328 seconds
+---------------------------------------
+cluster-gcn(s2gnn-pe-100k) with seed 12
+Time: 1683 seconds
+---------------------------------------
+cluster-gcn(s2gnn-pe-100k) with seed 13
+Time: 1710 seconds
+---------------------------------------
+cluster-gat(100k) with seed 11
+Time: 10475 seconds
+---------------------------------------
+cluster-gat(100k) with seed 12
+Time: 4588 seconds
+---------------------------------------
+cluster-gat(100k) with seed 13
+Time: 4969 seconds
+---------------------------------------
+cluster-gat(s2gnn-100k) with seed 11
+cluster-gmm(gcnconv) with seed 11
+Time: 1655 seconds
+---------------------------------------
+cluster-gmm(gcnconv) with seed 12
+Time: 1424 seconds
+---------------------------------------
+cluster-gmm(gcnconv) with seed 13
+Time: 1411 seconds
+---------------------------------------
+cluster-gmm(gcnconv-pe) with seed 11
+Time: 1636 seconds
+---------------------------------------
+cluster-gmm(gcnconv-pe) with seed 12
+cluster-gmm(gcnconv-pe) with seed 12
+Time: 3367 seconds
+---------------------------------------
+cluster-gmm(gcnconv-pe) with seed 13
+Time: 3101 seconds
+---------------------------------------
+cluster-gmm(s2gnn) with seed 11
+Time: 5463 seconds
+---------------------------------------
+cluster-gmm(s2gnn) with seed 12
+Time: 5080 seconds
+---------------------------------------
+cluster-gmm(s2gnn) with seed 13
+Time: 4898 seconds
+---------------------------------------
+cluster-gmm(s2gnn-pe) with seed 11
+Time: 4923 seconds
+---------------------------------------
+cluster-gmm(s2gnn-pe) with seed 12
+Time: 5111 seconds
+---------------------------------------
+cluster-gmm(s2gnn-pe) with seed 13
+Time: 4839 seconds
+---------------------------------------
+cluster-gat(s2gnn-100k) with seed 11
+Time: 12111 seconds
+---------------------------------------
+cluster-gat(s2gnn-100k) with seed 12
+Time: 11917 seconds
+---------------------------------------
+cluster-gat(s2gnn-100k) with seed 13
+Time: 11867 seconds
+---------------------------------------
+cluster-gat(s2gnn-pe-100k) with seed 11
+Time: 7179 seconds
+---------------------------------------
+cluster-gat(s2gnn-pe-100k) with seed 12
+Time: 6499 seconds
+---------------------------------------
+cluster-gat(s2gnn-pe-100k) with seed 13
+cluster-gat(s2gnn-pe-100k) with seed {13}
+Time: 5 seconds
+---------------------------------------
+cluster-gatedgcn(100k) with seed 11
+Time: 1651 seconds
+---------------------------------------
+cluster-gatedgcn(100k) with seed 12
+Time: 3232 seconds
+---------------------------------------
+cluster-gatedgcn(100k) with seed 13
+Time: 3318 seconds
+---------------------------------------
+cluster-gatedgcn-pe(100k) with seed 11
+Time: 3829 seconds
+---------------------------------------
+cluster-gatedgcn-pe(100k) with seed 12
+Time: 3863 seconds
+---------------------------------------
+cluster-gatedgcn-pe(100k) with seed 13
+Time: 3814 seconds
+---------------------------------------
+cluster-gatedgcn(s2gnn-100k) with seed 11
+Time: 5408 seconds
+---------------------------------------
+cluster-gatedgcn(s2gnn-100k) with seed 12
+Time: 5601 seconds
+---------------------------------------
+cluster-gatedgcn(s2gnn-100k) with seed 13
+Time: 5581 seconds
+---------------------------------------
+cluster-gatedgcn(s2gnn-pe-100k) with seed 11
+Time: 4825 seconds
+---------------------------------------
+cluster-gatedgcn(s2gnn-pe-100k) with seed 12
+Time: 247 seconds
+---------------------------------------
+cluster-gatedgcn(s2gnn-pe-100k) with seed 13
+Time: 5619 seconds
+---------------------------------------
+Running distance regression(dag-dirgcn-pe ) with seed 11
+Running distance regression(dag-dirgcn-pe ) with seed 11
+Running distance regression(dag-dirgcn-pe ) with seed 11
