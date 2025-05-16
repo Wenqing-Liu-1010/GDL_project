@@ -1,0 +1,12 @@
+[*] Run ID 13: seed=13, split_index=0
+    Starting now: 2025-05-13 11:54:38.359659
+[*] Loaded dataset 'CLUSTER' from 'PyG-GNNBenchmarkDataset':
+  Data(x=[1406436, 7], edge_index=[2, 51620680], y=[1406436])
+  undirected: True
+  num graphs: 12000
+  avg num_nodes/graph: 117
+  num node features: 7
+  num edge features: 0
+  num classes: 6
+Precomputing Positional Encoding statistics: ['MagLapPE'] for all graphs...
+  ...estimated to be undirected: True

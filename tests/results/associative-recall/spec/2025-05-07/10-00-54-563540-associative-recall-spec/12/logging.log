@@ -1,0 +1,12 @@
+[*] Run ID 12: seed=12, split_index=0
+    Starting now: 2025-05-07 10:00:54.880136
+[*] Loaded dataset 'associative-recall' from 'synthetic':
+  Data(x=[13643188, 32], edge_index=[2, 13617188], y=[26000], mask=[13643188], laplacian_eigenvector_plain=[13643188, 10], laplacian_eigenvalue_plain=[26000, 10], laplacian_eigenvalue_plain_mask=[26000, 10], laplacian_eigenvector_plain_posenc=[13643188, 10], laplacian_config=[26000])
+  undirected: False
+  num graphs: 26000
+  avg num_nodes/graph: 524
+  num node features: 32
+  num edge features: 0
+  num classes: 15
+Precomputing Positional Encoding statistics: ['MagLapPE'] for all graphs...
+  ...estimated to be undirected: False

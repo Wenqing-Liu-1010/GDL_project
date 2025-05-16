@@ -1,0 +1,12 @@
+[*] Run ID 14: seed=14, split_index=0
+    Starting now: 2025-05-16 20:50:37.505201
+[*] Loaded dataset 'source-dist' from 'synthetic':
+  Data(x=[41174547, 1], edge_index=[2, 45200812], y=[41174547], num_nodes=41174547)
+  undirected: False
+  num graphs: 55000
+  avg num_nodes/graph: 748
+  num node features: 1
+  num edge features: 0
+  num classes: 105
+Precomputing Positional Encoding statistics: ['MagLapPE'] for all graphs...
+  ...estimated to be undirected: False

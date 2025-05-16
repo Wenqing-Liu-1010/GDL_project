@@ -1,0 +1,13 @@
+[*] Run ID 12: seed=12, split_index=0
+    Starting now: 2025-05-06 20:57:26.179995
+[*] Loaded dataset 'arxiv-year' from 'OGB':
+  Data(num_nodes=169343, edge_index=[2, 1166243], x=[169343, 128], node_year=[169343, 1], y=[169343, 1], laplacian_eigenvalue_plain=[1, 100], laplacian_eigenvalue_plain_mask=[100], laplacian_eigenvector_plain=[169343, 100], laplacian_eigenvalue_plain_bounds=[1], laplacian_config='AddMagneticLaplacianEigenvectorPlain(attr_eigvec_name=laplacian_eigenvector_plain, attr_eigval_name=laplacian_eigenvector_plain, normalization=sym, which=SA, q=0.0001, drop_trailing_repeated=False, scc=False, positional_encoding=False, sparse=True)', train_mask=[169343], val_mask=[169343], test_mask=[169343])
+  undirected: False
+  num graphs: 1
+  avg num_nodes/graph: 169343
+  num node features: 128
+  num edge features: 0
+  num tasks: 1
+  num classes: 40
+Precomputing Positional Encoding statistics: ['MagLapPE'] for all graphs...
+  ...estimated to be undirected: False

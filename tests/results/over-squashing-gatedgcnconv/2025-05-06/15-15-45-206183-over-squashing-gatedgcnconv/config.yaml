@@ -1,0 +1,419 @@
+accelerator: auto
+benchmark: false
+bn:
+  eps: 1.0e-05
+  mom: 0.1
+cfg_dest: config.yaml
+custom_metrics: []
+dataset:
+  arxiv_year:
+    num_split: 0
+    with_ogbn_arxiv_labels: false
+  associative_recall:
+    n_graphs:
+    - 25000
+    - 500
+    - 500
+    num_keys: 1
+    num_vocab: 30
+    precalc_eigdec_k: 10
+    test_n_nodes:
+    - 1000
+    - 1200
+    train_n_nodes: &id001
+    - 20
+    - 1000
+    valid_n_nodes: *id001
+  cache_load: false
+  cache_save: false
+  custom_cluster:
+    gmm_cluster_from_posterior: true
+    gmm_dim: 2
+    gmm_edges_max: 10
+    gmm_edges_min: 1
+    gmm_range_clusters: 10
+    gmm_std_clusters: 2
+    graph_type: gmm
+    n_clusters: 6
+    n_graphs:
+    - 10000
+    - 1000
+    - 1000
+    random_p: 0.55
+    random_q: 0.25
+    size_max: 35
+    size_min: 5
+  dir: ./datasets
+  edge_dim: 128
+  edge_encoder: false
+  edge_encoder_bn: true
+  edge_encoder_name: Bond
+  edge_encoder_num_types: 0
+  edge_message_ratio: 0.8
+  edge_negative_sampling_ratio: 1.0
+  edge_train_mode: all
+  encoder: true
+  encoder_bn: true
+  encoder_dim: 128
+  encoder_name: db
+  format: synthetic
+  label_column: none
+  label_table: none
+  location: local
+  name: over-squashing
+  node_encoder: true
+  node_encoder_bn: false
+  node_encoder_name: LinearNode
+  node_encoder_num_types: 0
+  ogbn_arxiv:
+    mask_rate: 0.5
+    use_labels: true
+  over_squashing:
+    gen_mode: full
+    n_classes: 5
+    n_graphs:
+    - 5000
+    - 500
+    - 5000
+    test_n_nodes:
+    - 52
+    - 100
+    topology: ring_lollipop
+    train_n_nodes: &id002
+    - 4
+    - 50
+    valid_n_nodes: *id002
+  remove_feature: false
+  resample_disjoint: false
+  resample_negative: false
+  shuffle_split: true
+  slic_compactness: 10
+  source_dist:
+    n_graphs:
+    - 50000
+    - 2500
+    - 2500
+    p_add_edges_from_tree: 0
+    test_n_nodes:
+    - 1100
+    - 1200
+    train_n_nodes:
+    - 500
+    - 1000
+    valid_n_nodes:
+    - 1000
+    - 1100
+  split:
+  - 0.8
+  - 0.1
+  - 0.1
+  split_dir: ./splits
+  split_index: 0
+  split_mode: standard
+  task: graph
+  task_type: classification
+  to_undirected: false
+  tpu_graphs:
+    config_node_readout: false
+    custom: false
+    drop_high_deg_sinks: false
+    drop_high_deg_sources: false
+    drop_last_node_above_deg: -1
+    encoder_factor: 100.0
+    include_valid_in_train: false
+    normalize: false
+    search:
+    - random
+    source:
+    - nlp
+    subsample: 500
+    tpu_task: layout
+  transductive: false
+  transform: none
+  tu_simple: true
+device: cuda
+devices: 1
+example_arg: example
+example_group:
+  example_arg: example
+gnn:
+  act: gelu
+  adj_norm: none
+  agg: mean
+  att_final_linear: false
+  att_final_linear_bn: false
+  att_heads: 1
+  batchnorm: false
+  batchnorm_post_mp: false
+  clear_feature: true
+  dim_inner: 64
+  dir_aggr: cat
+  dropout: 0.01
+  gatconv:
+    attn_dropout: 0.05
+    backend: PyG
+    feat_dropout: 0.75
+    negative_slope: 0.2
+    norm: true
+    num_heads: 3
+    pre_dropout: 0.1
+    with_linear: true
+  head: masked_readout_graph
+  keep_edge: 0.5
+  l2norm: false
+  layer_skip: []
+  layer_type: gatedgcnconv
+  layernorm_post_mp: false
+  layers_mp: 15
+  layers_post_mp: 1
+  layers_pre_mp: 0
+  make_undirected: true
+  msg_direction: single
+  node_dropout: 0.0
+  normalize_adj: false
+  residual: false
+  self_msg: concat
+  skip_every: 1
+  spectral:
+    basis_bottleneck: 0.25
+    basis_init_type: default
+    basis_num_gaussians: 50
+    combine_with_spatial: null
+    combine_with_spatial_norm: true
+    dropout: -1.0
+    eigv_scale: -1
+    feature_transform: null
+    filter_encoder: basis
+    filter_layers: 1
+    filter_value_trans: null
+    filter_variant: naive
+    frequency_cutoff: null
+    layer_skip:
+    - -1
+    learnable_norm: false
+    learnable_norm_init: 0
+    mlp_layers_filter_encoder: 2
+    num_heads_filter_encoder: -1
+    readout: null
+    readout_residual: false
+    readout_sepnorm: false
+    real_imag_x_merge: null
+    residual: true
+    window: null
+  stage_type: stack
+  use_edge_attr: false
+gpu_mem: false
+gt:
+  attn_dropout: 0.0
+  batch_norm: true
+  bigbird:
+    add_cross_attention: false
+    attention_type: block_sparse
+    block_size: 3
+    chunk_size_feed_forward: 0
+    hidden_act: relu
+    is_decoder: false
+    layer_norm_eps: 1.0e-06
+    max_position_embeddings: 128
+    num_random_blocks: 3
+    use_bias: false
+  dim_hidden: 64
+  dropout: 0.0
+  full_graph: true
+  gamma: 1.0e-05
+  layer_norm: false
+  layer_type: SANLayer
+  layers: 3
+  n_heads: 8
+  pna_degrees: []
+  residual: true
+mem:
+  inplace: false
+metric_agg: argmax
+metric_best: auto
+model:
+  edge_decoding: dot
+  graph_pooling: add
+  list_mle_divisor: 250
+  loss_fun: weighted_cross_entropy
+  match_upper: true
+  size_average: mean
+  thresh: 0.5
+  type: s2gnn
+name_tag: ''
+num_threads: 6
+num_workers: 0
+optim:
+  base_lr: 0.002
+  batch_accumulation: 1
+  clip_grad_norm: true
+  last_layer_no_wd: false
+  lr_decay: 0.1
+  max_epoch: 500
+  min_lr: 0.0
+  model_averaging: null
+  model_averaging_start: 0
+  momentum: 0.9
+  num_warmup_epochs: 5
+  optimizer: adamW
+  quasi_alternating: -1
+  reduce_factor: 0.1
+  schedule_patience: 10
+  scheduler: cosine_with_warmup
+  steps:
+  - 30
+  - 60
+  - 90
+  stop_patience: 1000
+  weight_decay: 0.0005
+out_dir: tests/results/over-squashing-gatedgcnconv/2025-05-06/15-15-45-206183-over-squashing-gatedgcnconv
+posenc_ElstaticSE:
+  dim_pe: 16
+  enable: false
+  kernel:
+    times: []
+    times_func: range(10)
+  layers: 3
+  model: none
+  n_heads: 4
+  pass_as_var: false
+  post_layers: 0
+  raw_norm_type: none
+posenc_EquivStableLapPE:
+  eigen:
+    eigvec_norm: L2
+    laplacian_norm: sym
+    max_freqs: 10
+  enable: false
+  raw_norm_type: none
+posenc_HKdiagSE:
+  dim_pe: 16
+  enable: false
+  kernel:
+    times: []
+    times_func: ''
+  layers: 3
+  model: none
+  n_heads: 4
+  pass_as_var: false
+  post_layers: 0
+  raw_norm_type: none
+posenc_LapPE:
+  dim_pe: 16
+  eigen:
+    eigvec_norm: L2
+    laplacian_norm: sym
+    max_freqs: 10
+  enable: false
+  layers: 3
+  model: none
+  n_heads: 4
+  pass_as_var: false
+  post_layers: 0
+  raw_norm_type: none
+posenc_MagLapPE:
+  dim_pe: 0
+  drop_trailing_repeated: false
+  enable: false
+  kwargs: {}
+  laplacian_norm: sym
+  largest_connected_component: true
+  layers: 3
+  max_freqs: 10
+  model: none
+  n_heads: 4
+  pass_as_var: false
+  positional_encoding: false
+  post_layers: 0
+  precompute: false
+  q: 5.0e-06
+  raw_norm_type: none
+  sparse: true
+  which: SA
+posenc_RWSE:
+  dim_pe: 16
+  enable: false
+  kernel:
+    times: []
+    times_func: ''
+  layers: 3
+  model: none
+  n_heads: 4
+  pass_as_var: false
+  post_layers: 0
+  raw_norm_type: none
+posenc_SignNet:
+  dim_pe: 16
+  eigen:
+    eigvec_norm: L2
+    laplacian_norm: sym
+    max_freqs: 10
+  enable: false
+  layers: 3
+  model: none
+  n_heads: 4
+  pass_as_var: false
+  phi_hidden_dim: 64
+  phi_out_dim: 4
+  post_layers: 0
+  raw_norm_type: none
+pretrained:
+  dir: ''
+  freeze_main: false
+  reset_prediction_head: false
+print: both
+round: 5
+run_dir: tests/results/over-squashing-gatedgcnconv
+run_multiple_splits: []
+seed: 17
+share:
+  dim_in: 64
+  dim_out: 1
+  num_splits: 1
+tensorboard_agg: true
+tensorboard_each_run: false
+train:
+  auto_resume: false
+  batch_size: 256
+  ckpt_best: true
+  ckpt_clean: true
+  ckpt_data_attrs:
+  - y
+  - pred
+  - batch
+  ckpt_data_splits:
+  - val
+  - test
+  ckpt_period: 100
+  enable_ckpt: true
+  epoch_resume: -1
+  eval_period: 1
+  iter_per_epoch: 32
+  mode: custom
+  neighbor_sizes:
+  - 20
+  - 15
+  - 10
+  - 5
+  node_per_graph: 32
+  num_sample_configs: 16
+  radius: extend
+  sample_node: false
+  sampler: full_batch
+  scale_num_sample_configs: true
+  skip_train_eval: false
+  walk_length: 4
+val:
+  node_per_graph: 32
+  num_sample_batch: 100
+  num_sample_configs: 1000
+  radius: extend
+  sample_node: false
+  sampler: full_batch
+view_emb: false
+wandb:
+  entity: tum_i26
+  name: ''
+  project: over-squashing
+  tags: ''
+  use: false
