@@ -24,6 +24,7 @@ python main.py \
   out_dir tests/results/peptides-func-default \
   wandb.use False \
   seed 1
+  
 (Alternatively, run the provided run.sh script.)
 
 
