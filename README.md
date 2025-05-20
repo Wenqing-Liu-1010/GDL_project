@@ -18,6 +18,7 @@
 
 
 3. Running the Original Experiments
+   
 python main.py \
   --cfg configs/peptides-func/peptides-func-s2gnn.yaml \
   out_dir tests/results/peptides-func-default \
@@ -26,7 +27,7 @@ python main.py \
 (Alternatively, run the provided run.sh script.)
 
 
-4. Cora node classification
+5. Cora node classification
 
 python Cora_main.py
 
