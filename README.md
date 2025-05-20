@@ -7,7 +7,8 @@
    conda env create -f new_env.yml  
    conda activate new_env
    ```
-3. Install PyTorch and dependencies:
+2. Install PyTorch and dependencies:
+   ```bash
    
     pip install torch==2.5.1+cu118 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  
     pip install torch-geometric -f https://data.pyg.org/whl/torch-2.5.1+cu118.html  
@@ -15,23 +16,27 @@
     pip install ogb  
     pip install pyg-lib torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric \
       -f https://data.pyg.org/whl/torch-2.5.1+cu118.html  
-    pip install torchmetrics==0.10.3  
+    pip install torchmetrics==0.10.3
+   ```
 
 
-4. Running the Original Experiments
+3. Running the Original Experiments
+```bash
    
 python main.py \
   --cfg configs/peptides-func/peptides-func-s2gnn.yaml \
   out_dir tests/results/peptides-func-default \
   wandb.use False \
   seed 1
+```
   
 (Alternatively, run the provided run.sh script.)
 
 
 5. Cora node classification
-
+```bash
 python Cora_main.py
+```
 
 
 
